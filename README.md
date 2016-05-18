@@ -26,6 +26,7 @@ To install the library in the [Arduino IDE](https://www.arduino.cc/) steps are:
 
 Library provides two functions:
  * **void SerialInit( uint8_t , unsigned long )**
+
 	It allows to configure transmission port thus baud rate:
 	* The first parameter is the transmission port.
 		Ports allowed are from *PB0* to *PB5*.
@@ -33,6 +34,7 @@ Library provides two functions:
 		Typically: 115200 Baud.
 
  * **void SerialTx( const char * )**
+
 	It allows to send a string through a character array.
 
 ## Arduino sketch example
