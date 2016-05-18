@@ -28,9 +28,13 @@ Library provides two functions:
  * **void SerialInit( uint8_t , unsigned long )**
 
 	It allows to configure transmission port thus baud rate:
+
 	* The first parameter is the transmission port.
+
 		Ports allowed are from *PB0* to *PB5*.
+
 	* The second one is the baud rate.
+
 		Typically: 115200 Baud.
 
  * **void SerialTx( const char * )**
