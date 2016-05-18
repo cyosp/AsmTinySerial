@@ -60,3 +60,7 @@ void setup()
 void loop()
 {}
 ```
+
+## License
+
+**[AsmTinySerial](https://github.com/cyosp/AsmTinySerial)** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.
