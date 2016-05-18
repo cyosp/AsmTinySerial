@@ -46,18 +46,18 @@ void SerialInit( uint8_t txPin , unsigned long baudRate )
 	// Initialize the function pointer
 	switch( txPin )
 	{
-		case 0 : SerialAsmTx = &SerialAsmTx_0;
-		         break;
-		case 1 : SerialAsmTx = &SerialAsmTx_1;
-		         break;
-		case 2 : SerialAsmTx = &SerialAsmTx_2;
-		         break;
-		case 3 : SerialAsmTx = &SerialAsmTx_3;
-		         break;
-		case 4 : SerialAsmTx = &SerialAsmTx_4;
-		         break;
-		case 5 : SerialAsmTx = &SerialAsmTx_5;
-		         break;
+		case PB0 : SerialAsmTx = &SerialAsmTx_0;
+				   break;
+		case PB1 : SerialAsmTx = &SerialAsmTx_1;
+				   break;
+		case PB2 : SerialAsmTx = &SerialAsmTx_2;
+				   break;
+		case PB3 : SerialAsmTx = &SerialAsmTx_3;
+				   break;
+		case PB4 : SerialAsmTx = &SerialAsmTx_4;
+				   break;
+		case PB5 : SerialAsmTx = &SerialAsmTx_5;
+				   break;
 	}
 }
 
