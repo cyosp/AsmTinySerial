@@ -2,7 +2,7 @@
 
 Serial assembler library for AVR ATtiny
 
-![Stable version](https://img.shields.io/badge/stable-1.0.0-blue.svg)
+![Stable version](https://img.shields.io/badge/stable-1.0.1-blue.svg)
 [![BSD-3 license](https://img.shields.io/badge/license-BSD--3--Clause-428F7E.svg)](https://tldrlegal.com/license/bsd-3-clause-license-%28revised%29)
 
 ## Description
@@ -13,13 +13,15 @@ With a [C](https://en.wikipedia.org/wiki/C_%28programming_language%29) interface
 
 At the end it has been tested on a [ATtiny85](http://www.atmel.com/devices/attiny85.aspx) and must be at least compatible with ATtinyX5 series.
 
-Library is **only 260 Bytes**
+Library is **only 260 Bytes**.
 
 ## Arduino installation
 
 To install the library in the [Arduino IDE](https://www.arduino.cc/) steps are:
+ * Download [AsmTinySerial-master.zip](https://github.com/cyosp/AsmTinySerial/archive/master.zip) and extract it.
+ * Remove *-master* of the folder *AsmTinySerial-master* in order to have *AsmTinySerial*.
  * Close your Arduino software if opened.
- * Copy the *Arduino/AsmTinySerial* folder in your Arduino *sketchbook/libraries* directory.
+ * Move the *AsmTinySerial* folder in your Arduino *sketchbook/libraries* directory.
  * That's all, restart your Arduino software.
 
 ## How to use
@@ -41,26 +43,18 @@ Library provides two functions:
 
 	It allows to send a string through a character array.
 
-## Arduino sketch example
+## AsmTinySerial_Demo
 
-This sketch shows how to use the library:
+This sketch is the one provided in the library as example.
 
-```C
-#include <AsmTinySerial.h>
+It shows how to use it and can be opened using:
 
-void setup()
-{
-  // Initialize the library
-  // Transmit on pin 3 @ 115200 baud
-  SerialInit( PB3  , 115200 );
-  // Send Init string
-  SerialTx( "Init" );
-}
+* *File -> Examples -> AsmTinySerial -> AsmTinySerial_Demo* :
 
-void loop()
-{}
-```
+	![AsmTinySerial_Demo.ino sketch](AsmTinySerial_Demo.png)
 
 ## License
 
-**[AsmTinySerial](https://github.com/cyosp/AsmTinySerial)** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.
+**[AsmTinySerial](https://github.com/cyosp/AsmTinySerial)** is released under the BSD 3-Clause License.
+
+See the bundled `LICENSE.md` for details.
