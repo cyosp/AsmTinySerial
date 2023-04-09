@@ -8,6 +8,6 @@
     "url": "https://github.com/cyosp/AsmTinySerial"
   },
   "version": "1.0.1",
-  "platforms": "*",
+  "platforms": "atmelavr",
   "dependencies": []
 }
