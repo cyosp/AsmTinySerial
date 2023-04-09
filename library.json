@@ -1,0 +1,13 @@
+{
+  "name": "AsmTinySerial",
+  "keywords": "ATTINY",
+  "description": "Serial assembler library for AVR ATtiny.",
+  "homepage": "https://github.com/cyosp/AsmTinySerial",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cyosp/AsmTinySerial"
+  },
+  "version": "1.0.1",
+  "platforms": "atmelavr",
+  "dependencies": []
+}
